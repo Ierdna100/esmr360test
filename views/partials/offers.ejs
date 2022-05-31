@@ -1,0 +1,32 @@
+<% console.log("Found" + titles) %>
+<% if(titles != "") { %> 
+    <div class="row mb-2">
+        <% for(idx in titles) { %>  
+            <div class="col-md-6"> <!-- This number defines the amount of columns. 12:1, 6:2, 4:3, 3:4, etc.-->
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-relative">
+                        <div class="d-flex flex-row mb-2 text-success justify-content-between">
+                            <div class="p-2"><strong> <%= themes[idx] %> </strong></div>
+                            <div class="p-2 text-muted"> <%= places[idx] %> places </div>
+                        </div>
+                        <h3 class="mb-0"> <%= titles[idx] %> </h3>
+                        <div class="mb-1 text-muted"> <%= dateStart[idx] %> - <%= dateEnd[idx] %></div>
+                        <p class="mb-2"> <%= descs[idx] %> </p>
+                        <div class="mb-1 text-muted"> contact: <%= contacts[idx] %></div>
+                    </div>
+                    <!-- <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            
+                    </div> -->
+                </div>
+            </div>
+        <% } %>
+    </div>
+<% } else { %>
+    <div class="card text-white bg-primary mb-3 d-flex justify-content-center" style="max-width: 100%;">
+        <div class="card-body">
+            <h4 class="card-title">Aucune offre de service-action n'est offerte pour le moment</h4>
+            <p class="card-text">Revenez plus tard ou ajoutez la vôtre en lisant la page "Créer une offre" et en soumettant le formulaire.</p>
+        </div>
+    </div>
+<% } %>

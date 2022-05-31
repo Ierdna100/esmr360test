@@ -1,0 +1,77 @@
+<html>
+    <body>
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" width="45" src="/images/newESMR360logo.png" alt="">
+          <span class="fs-4">ESMR 360</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link">Offres</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Créer une offre</a></li>
+          <%- include ('./partials/adminOffer') %>
+          <!-- <li class="nav-item"><a href="/destroy" class="nav-link active">Déconnecter</a></li> -->
+        </ul>
+      </header>
+
+      <div style="max-width: 65%; min-width: 65%; margin: auto">
+          <div class="d-flex flex-column flex-wrap justify-content-center"></div>
+            <p class="card-text" style="text-align: center;"> <strong> Afin de pouvoir contrôler ce qui va sur le site, vous ne pouvez pas
+                directement ajouter une offre par le site. Vous pouvez par contre faire une demande, avec
+                le formulaire ci-dessous:</strong>
+                <br>
+                <br><a href="https://www.google.com/"> Lien vers le formulaire</a>
+                <br>
+                <h3>Instructions pour remplir le formulaire</h1>
+                <ul>
+                    <li>
+                        <h5>Vous devez donner un thème à votre offre, qui représente le sujet général de celle-ci.
+                             E.g. "tutorat", "organistion d'un événement", "mathématiques", "anglais", "tutorat anglais", etc.</h4>
+                    </li>
+                    <li>
+                        <h5>Vous devez donner la date du début de l'offre ainsi que celle de la fin. 
+                            Si il n'y a qu'une seule date, alors ne rentrez que la première.</h5>
+                    </li>
+                    <li>
+                        <h5>Vous devez indiquer le nombre de positions disponibles de votre offre, 
+                            si il n'y en à pas, marquez "Illimité".
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>Vous devez écrire une courte description de quelques mots (maximum 50).</h5>
+                    </li>
+                    <li>
+                        <h5>
+                            Vous devez indiquer un moyen de vous contacter, que ce soit un numéro de téléphone, 
+                            votre addresse électronique de l'école ou autre.
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>Assurez vous que l'information est correcte avant d'envoyer le formulaire. Si vous désirez
+                            enlever ou modifier un détail ou une offre, n'hésitez pas à contacter 
+                            <strong>popean3@ggl.csmb.qc.ca</strong> ou 
+                            <strong>Franck.Potwora@csmb.qc.ca</strong>.
+                        </h5>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+        
+    </body>
+    
+    <div class="container d-flex flex-column min-vh-100">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Popescu Andrei <br>popean3@ggl.csmb.qc.ca</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class="bi me-2" width="45" src="/images/newESMR360logo.png" alt="">
+          <span class="fs-4">ESMR 360</span>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <!-- <li class="nav-item"><a href="/changelogs" class="nav-link px-2 text-muted">Changements</a></li> -->
+        </ul>
+      </footer>
+    </div>
+</html>

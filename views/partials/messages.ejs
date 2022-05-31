@@ -1,0 +1,26 @@
+<% if(typeof errors != 'undefined') { %>
+    <% errors.forEach(function(error) { %>  
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= error.msg %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% }); %>
+<% } %>  
+
+<% if(typeof dangers != 'undefined') { %>
+    <% dangers.forEach(function(dangers) { %>  
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <%= dangers.msg %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% }); %>
+<% } %>  
+
+<% if(typeof infos != 'undefined') { %>
+    <% infos.forEach(function(infos) { %>  
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <%= infos.msg %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% }); %>
+<% } %>  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" width="45" src="/images/newESMR360logo.png" alt="">
+          <span class="fs-4">ESMR 360</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Offres</a></li>
+          <li class="nav-item"><a href="/creeroffre" class="nav-link">Créer une offre</a></li>
+          <%- include ('./partials/adminOffer') %>
+          <!-- <li class="nav-item"><a href="/destroy" class="nav-link active">Déconnecter</a></li> -->
+        </ul>
+      </header>
+
+        <div class="alert alert-dismissible alert-warning">
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+            <h4 class="alert-heading">Bienvenu sur le site ESMR 360!</h4>
+            <p class="mb-0">Vous pouvez trouver toutes les offres de service action offertes localement par les élèves, enseignants et administrateurs de notre école!</p>
+        </div>
+        <%- include ('./partials/offers') %>
+    </body>
+    
+    <div class="container d-flex flex-column">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Popescu Andrei <br>popean3@ggl.csmb.qc.ca</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class="bi me-2" width="45" src="/images/newESMR360logo.png" alt="">
+          <span class="fs-4">ESMR 360</span>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <!-- <li class="nav-item"><a href="/changelogs" class="nav-link px-2 text-muted">Changements</a></li> -->
+        </ul>
+      </footer>
+    </div>
+</html>
